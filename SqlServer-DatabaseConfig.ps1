@@ -15,7 +15,7 @@ foreach ($rs in $fetch_rs) {
     $sqlserver = Get-Item $sqlcon
 
     $fetch_db_config = '
-    insert into [linked_server_here]..[database_configuration_production_group] (
+    insert into [linked_server_cms]..[database_configuration_production_group] (
         capture_date, server_name, [database_name], last_backup,
 	    ROWS_total_size_gb, ROWS_files, ROWS_p_growth, LOG_total_size_gb, LOG_p_growth,
 	    owner_sid, sysuser_loginname,
